@@ -1,0 +1,148 @@
+*{
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+:root{
+    --mf:'Roboto', sans-serif;;
+    --sf: 'Dosis', sans-serif; 
+}
+body{
+    font-family: var(--mf);
+}
+
+.msgWrapper{
+    width: 320px;
+    height: 360px;
+    background: #ffffff;
+    position: fixed;
+    bottom: 80px;
+    right: 40px;
+    -moz-box-shadow: 0 0 10px rgba(0,0,0,0.3);
+    -webkit-box-shadow: 0 0 10px rgba(0,0,0,0.3);
+    box-shadow: 0 0 10px rgba(0,0,0,0.3);
+}
+.msgIcon{
+    width: 40px;
+    height: 40px;
+    background: #028276;
+    position: fixed;
+    bottom: 20px;
+    right: 40px;
+    border-radius: 50%;
+    padding: 8px;
+}
+.msgIcon img{
+    width: 100%;
+    display: block;
+    -moz-filter: invert(100%);
+    -webkit-filter: invert(100%);
+    filter: invert(100%);
+}
+.msText{
+    width: 100%;
+    float: left;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    max-height: 236px;
+    overflow-y:auto; 
+}
+.robotText{
+    max-width: 80%;
+    width: auto;
+    float: left;
+    background: #028276;
+    color: #fff;
+    padding: 8px 10px;
+    border-radius: 10px;
+    margin-bottom: 5px;
+}
+.profileImg{
+    width: 50px;
+    height: 50px;    
+    margin-right: 10px;
+}
+.profileImg img{
+    width: 100%;
+    height: 50px;
+    object-fit: cover;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+}
+.robotText::after{
+    clear: both;
+    content: '';
+    display: table;
+}
+.userText{
+    max-width: 80%;
+    width: auto;
+    float: right;
+    background: #0086ae;
+    color: #fff;
+    padding: 8px 10px;
+    border-radius: 10px;
+    margin-bottom: 5px;
+    position: relative;
+}
+.userText::after{
+    content: "";
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 20px 20px 0 0;
+    border-color: #0085ae transparent transparent transparent;    
+    position: absolute;
+    top: 0;
+    right: -12px;
+}
+.headingPart{
+    padding: 8px 10px;
+    -webkit-display: flex;
+    -moz-display: flex;
+    display: flex;
+    align-items: center;
+    background: #0086ae;
+}
+.headingPart h4{
+    color: #ffffff;
+    padding-bottom: 3px;
+    font-size: 20px;
+}
+.headingPart p{
+    color: #ffffff;
+    font-size: 12px;
+}
+.textAreaPrt{
+    width: 100%;
+    position: absolute;
+    bottom: 10px;
+    left: 0;
+    padding: 0 15px;
+}
+.msgInput{
+    width: 100%;
+    height: 38px;
+    padding: 0 10px;
+    border: 1px solid #dadada;
+}
+.msgInput:focus{
+    outline: none;
+}
+.roboImg{
+    width: 35px;
+    float: left;
+    margin-right: 10px;
+}
+
+.roboImg img{
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    object-fit: cover;
+    box-shadow:  0 0 5px rgba(0,0,0,0.15);
+}
